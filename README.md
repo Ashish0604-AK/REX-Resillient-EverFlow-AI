@@ -155,34 +155,7 @@ It evaluates disruption probability, assigns risk levels, estimates downstream i
 
 ##  System Workflow  
 
-```mermaid
-flowchart TD
-A[Business User] --> B[Add Suppliers Details]
-B --> C[Supplier Database]
-
-C --> D[Data Collection Layer]
-
-D --> E[Weather API]
-D --> F[Manual Supplier Data]
-D --> G[Simulated Logistics Data]
-
-E --> H[Risk Evaluation Engine]
-F --> H
-G --> H
-
-H --> I[Rule-Based Prediction]
-I --> J[Risk Classification]
-
-J --> K[Safe / Medium / High Risk]
-
-K --> L[Impact Analysis]
-L --> M[Loss Estimation]
-M --> N[Recommendation Engine]
-N --> O[Suggested Actions]
-
-O --> P[Dashboard Display]
-
-```
+![Everflow AI Workflow](Docs/Everflow_workflow.png)
 
 ###  Process Flow  
 
